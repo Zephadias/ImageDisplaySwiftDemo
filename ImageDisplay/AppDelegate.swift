@@ -12,10 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController: UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let frame = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: frame)
+        
+        navigationController = UINavigationController()
+        navigationController!.title = "Image Search Demo"
+        
+        var mainViewController:MainViewController = MainViewController()
+        
+        navigationController!.pushViewController(mainViewController, animated: false)
+        
+        if let window = self.window {
+            window.rootViewController = navigationController
+            window.makeKeyAndVisible()
+        }
+        
+        
+        
         return true
     }
 
