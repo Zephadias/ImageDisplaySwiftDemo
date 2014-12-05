@@ -15,7 +15,7 @@ class ResultsGridViewController: UIViewController, UICollectionViewDelegateFlowL
     override init() {
         super.init(nibName:nil, bundle:nil)
         self.title = "Grid View"
-        let gridImage = UIImage(named: "gridIcon")
+        let gridImage = UIImage(named: "GridIcon")
         self.tabBarItem.image = gridImage
     }
 

@@ -39,11 +39,6 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         searchButton.addTarget(self, action: "searchButtonClicked:", forControlEvents: .TouchUpInside)
         self.view.addSubview(searchButton)
         
-        let image1 = UIImage(named: "GridIcon")
-        let imageview = UIImageView(image: image1)
-        imageview.center.y = 200
-        self.view.addSubview(imageview)
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     

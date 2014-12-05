@@ -13,8 +13,8 @@ class ResultsTableViewContoller: UITableViewController, UITableViewDataSource, U
     
     override init() {
         super.init(nibName:nil, bundle:nil)
-        self.title = "List View 2"
-        let listImage = UIImage(named: "listIcon")
+        self.title = "List View"
+        let listImage = UIImage(named: "ListIcon")
         self.tabBarItem.image = listImage
     }
     
