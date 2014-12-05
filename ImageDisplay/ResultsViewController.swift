@@ -13,12 +13,21 @@ class ResultsViewController:UITabBarController, UITabBarControllerDelegate
     var resultsCollection: ResultsGridViewController?
     var resultsList: ResultsTableViewContoller?
     
+    var data: [ImageObject] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for i in 0...190 {
+            let imgObj = ImageObject(pImageUrl: "StartseiteGalerieEpisoden")
+            data.append(imgObj)
+        }
+        
         resultsCollection = ResultsGridViewController()
+        resultsCollection!.data = data
         
         resultsList = ResultsTableViewContoller()
+        resultsList!.data = data
         
         let viewControllers = [resultsList!, resultsCollection!]
         

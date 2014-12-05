@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0FE73E3-F79D-4EED-A13A-E818AF283E9D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ImageDisplay</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F89EAE0A32F817ED00121557D40192BC731606B4</key>
+		<string>github.com:Zephadias/ImageDisplaySwiftDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ImageDisplay.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F89EAE0A32F817ED00121557D40192BC731606B4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Zephadias/ImageDisplaySwiftDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F89EAE0A32F817ED00121557D40192BC731606B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F89EAE0A32F817ED00121557D40192BC731606B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ImageDisplay</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -12,6 +12,8 @@ class ResultsGridViewController: UIViewController, UICollectionViewDelegateFlowL
     
     var collectionView: UICollectionView?
     
+    var data: [ImageObject] = []
+    
     override init() {
         super.init(nibName:nil, bundle:nil)
         self.title = "Grid View"
@@ -28,11 +30,11 @@ class ResultsGridViewController: UIViewController, UICollectionViewDelegateFlowL
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        layout.itemSize = CGSize(width: 50, height: 50)
+        var layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 1
+        layout.minimumLineSpacing = 1
+        let cellWidth:CGFloat = (self.view.frame.width - 3) / 4
+        layout.itemSize = CGSize(width: cellWidth, height: cellWidth)
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView!.delegate = self
         collectionView!.dataSource = self
@@ -46,14 +48,20 @@ class ResultsGridViewController: UIViewController, UICollectionViewDelegateFlowL
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return data.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell:ResultsCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("ResultsCollectionViewCell", forIndexPath: indexPath) as ResultsCollectionViewCell
         cell.backgroundColor = UIColor.blackColor()
-        cell.textLabel?.text = "\(indexPath.section):\(indexPath.row)"
+        let tempImage:UIImage = Utils.sharedInstance.imageScaled(data[indexPath.item].imageUrl!, maxWidth: self.view.frame.width/4)
+        cell.setData(tempImage)
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let imageView = FullScreenImageView(pImage: data[indexPath.item].imageUrl!)
+        self.navigationController!.pushViewController(imageView, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

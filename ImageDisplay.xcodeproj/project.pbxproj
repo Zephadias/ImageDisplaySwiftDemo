@@ -16,6 +16,9 @@
 		CB69366E1A317E2F0095B48C /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69366D1A317E2F0095B48C /* ResultsTableViewController.swift */; };
 		CB6936721A3182B30095B48C /* ResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6936711A3182B30095B48C /* ResultsCollectionViewCell.swift */; };
 		CB6936741A318BDD0095B48C /* ResultsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6936731A318BDD0095B48C /* ResultsGridViewController.swift */; };
+		CB69367F1A322A600095B48C /* ImageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69367E1A322A600095B48C /* ImageObject.swift */; };
+		CB6936811A3240B30095B48C /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6936801A3240B30095B48C /* FullScreenImageView.swift */; };
+		CB6936831A324E160095B48C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6936821A324E160095B48C /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		CB69366D1A317E2F0095B48C /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		CB6936711A3182B30095B48C /* ResultsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB6936731A318BDD0095B48C /* ResultsGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsGridViewController.swift; sourceTree = "<group>"; };
+		CB69367E1A322A600095B48C /* ImageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageObject.swift; sourceTree = "<group>"; };
+		CB6936801A3240B30095B48C /* FullScreenImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
+		CB6936821A324E160095B48C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 				CB69366B1A3107420095B48C /* ResultsViewController.swift */,
 				CB6936711A3182B30095B48C /* ResultsCollectionViewCell.swift */,
 				CB6936731A318BDD0095B48C /* ResultsGridViewController.swift */,
+				CB69367E1A322A600095B48C /* ImageObject.swift */,
+				CB6936801A3240B30095B48C /* FullScreenImageView.swift */,
+				CB6936821A324E160095B48C /* Utils.swift */,
 			);
 			path = ImageDisplay;
 			sourceTree = "<group>";
@@ -222,8 +231,11 @@
 			files = (
 				CB69366E1A317E2F0095B48C /* ResultsTableViewController.swift in Sources */,
 				CB6936741A318BDD0095B48C /* ResultsGridViewController.swift in Sources */,
+				CB6936831A324E160095B48C /* Utils.swift in Sources */,
 				CB6936721A3182B30095B48C /* ResultsCollectionViewCell.swift in Sources */,
+				CB69367F1A322A600095B48C /* ImageObject.swift in Sources */,
 				CB6936201A30C75C0095B48C /* MainViewController.swift in Sources */,
+				CB6936811A3240B30095B48C /* FullScreenImageView.swift in Sources */,
 				CB69361E1A30C75C0095B48C /* AppDelegate.swift in Sources */,
 				CB69366C1A3107420095B48C /* ResultsViewController.swift in Sources */,
 			);
